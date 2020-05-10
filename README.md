@@ -5,7 +5,8 @@
 ###  Team name : growing 
 
 <br>
-<br>
+
+
 **Application description:**
 
 저희는 현대인들에게 필요한 Application을 개발하기로 하였습니다.
