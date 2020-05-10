@@ -1,8 +1,8 @@
 # :deciduous_tree: 시나브로 :deciduous_tree:
 
-## <div style="text-align: right"> (Open Source Software Development - OurFisrtApp) </div>
+## (Open Source Software Development - OurFisrtApp) 
 
-### <div style="text-align: right"> Team name : growing </div>
+###  Team name : growing 
 
 
 **Application description:**
@@ -17,7 +17,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 추가 기능과 개발 상황들은 계속해서 README.md와 문서정리 등을 통해 업데이트하도록 하겠습니다.
 
-
+<br>
 
 **Team member :**
 
@@ -27,5 +27,5 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 2019089034 KIM HYUNJIN(김헌진)
 
-
+<br>
 **- Hanyang University ERICA Computer Science -**
