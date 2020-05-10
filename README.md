@@ -1,8 +1,8 @@
 # :deciduous_tree: 시나브로 :deciduous_tree:
 
-##                                                     (Open Source Software Development - OurFisrtApp)
+## <div style="text-align: right"> (Open Source Software Development - OurFisrtApp) </div>
 
-###                                                                                Team name : growing 
+### <div style="text-align: right"> Team name : growing </div>
 
 
 **Application description:**
