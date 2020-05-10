@@ -4,6 +4,14 @@
 
 ###  Team name : growing 
 
+**Team member :**
+
+2019056462 LIM DANBI(임단비)
+
+2019036380 LEE DAEUN(이다은)
+
+2019089034 KIM HYUNJIN(김헌진)
+
 <br>
 
 
@@ -19,14 +27,5 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 <br>
 
-**Team member :**
-
-2019056462 LIM DANBI(임단비)
-
-2019036380 LEE DAEUN(이다은)
-
-2019089034 KIM HYUNJIN(김헌진)
-
-<br>
 
 **- Hanyang University ERICA Computer Science -**
