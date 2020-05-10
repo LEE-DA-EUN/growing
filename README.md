@@ -1,9 +1,11 @@
-# Open Source Software Development - OurFisrtApp "시나브로"
+# "시나브로"
+### (Open Source Software Development - OurFisrtApp)
 
 ## :deciduous_tree: Team name : growing :deciduous_tree:
 
 
-**Application description: **
+
+**Application description:**
 
 저희는 현대인들에게 필요한 Application을 개발하기로 하였습니다.
 
@@ -16,6 +18,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 추가 기능과 개발 상황들은 계속해서 README.md와 문서정리 등을 통해 업데이트하도록 하겠습니다.
 
 
+
 **Team member :**
 
 2019056462 LIM DANBI(임단비)
@@ -25,4 +28,4 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 2019089034 KIM HYUNJIN(김헌진)
 
 
-** - Hanyang University ERICA Computer Science - **
+**- Hanyang University ERICA Computer Science -**
