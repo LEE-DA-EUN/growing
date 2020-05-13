@@ -29,7 +29,15 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 <br>
 
-2020.05.13. 어플리케이션 기능 회의
+- 2020.05.13. 어플리케이션 기능 회의
+
+- 
+
+-
+
+-
+
+-
 
 
 **- Hanyang University ERICA Computer Science -**
