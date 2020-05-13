@@ -1,6 +1,6 @@
 # :deciduous_tree: 시나브로 :deciduous_tree:
 
-## (Open Source Software Development - OurFisrtApp) 
+## (Open Source Software Development - OurFirstApp) 
 
 ###  Team name : growing 
 
