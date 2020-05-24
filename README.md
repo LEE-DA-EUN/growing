@@ -35,9 +35,12 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 - 2020.05.17. ~ 2020.05.24. fragment, data base 학습
 
--
+- 2020.05.24. 시작화면 splash기능 추가, 어플리케이션 기능 구현방법 회의 및 각자 구현할 기능 분담
+
+- 2020.05.24. ~ 2020.05.30. 맡은 기능 구현하기, data base 학습
 
 -
 
+-
 
 **- Hanyang University ERICA Computer Science -**
