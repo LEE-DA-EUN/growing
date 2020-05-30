@@ -66,4 +66,5 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 </div>
 
 <br>
+
 **- Hanyang University ERICA Computer Science -**
