@@ -1,0 +1,2 @@
+rootProject.name='OSS-시나브로'
+include ':app'
