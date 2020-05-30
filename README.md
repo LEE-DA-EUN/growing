@@ -58,11 +58,12 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 <img src="https://user-images.githubusercontent.com/55095806/83333862-b1a3de00-a2dd-11ea-8442-791bb1be10f9.png" width="250">
 
-
+<br>
 
 <세부 기능 - 한줄기록, 소망목록, 감정쓰레기통, 감상책>
 <div>
 <img src="https://user-images.githubusercontent.com/55095806/83334066-efedcd00-a2de-11ea-9f70-764b86a6cd29.png"width="250">
 </div>
 
+<br>
 **- Hanyang University ERICA Computer Science -**
