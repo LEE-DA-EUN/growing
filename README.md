@@ -51,4 +51,14 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 -
 
+
+
+
+<앱 시작화면(splash) - 3초간 유지 후 mainactivity로 이동>
+![app splash view](https://user-images.githubusercontent.com/55095806/83333862-b1a3de00-a2dd-11ea-8442-791bb1be10f9.png)
+
+
+
+
+
 **- Hanyang University ERICA Computer Science -**
