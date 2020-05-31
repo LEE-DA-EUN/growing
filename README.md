@@ -62,7 +62,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 **<세부 기능 - 한줄기록, 소망목록, 감정쓰레기통, 감상책>**
 <div>
-<img src="https://user-images.githubusercontent.com/55095806/83347818-a6df5c80-a362-11ea-95a2-c9b778af1c87.png">
+<img src="https://user-images.githubusercontent.com/55095806/83347818-a6df5c80-a362-11ea-95a2-c9b778af1c87.png" width="250">
 </div>
 
 <br>
