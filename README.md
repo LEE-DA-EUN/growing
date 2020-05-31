@@ -52,7 +52,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 -
 
 
-
+<br>
 
 **<앱 시작화면(splash) - 3초간 유지 후 mainactivity로 이동>**
 
@@ -62,7 +62,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 **<세부 기능 - 한줄기록, 소망목록, 감정쓰레기통, 감상책>**
 <div>
-<img src="https://user-images.githubusercontent.com/55095806/83334066-efedcd00-a2de-11ea-9f70-764b86a6cd29.png"width="250">
+<img src="https://user-images.githubusercontent.com/55095806/83347818-a6df5c80-a362-11ea-95a2-c9b778af1c87.png">
 </div>
 
 <br>
