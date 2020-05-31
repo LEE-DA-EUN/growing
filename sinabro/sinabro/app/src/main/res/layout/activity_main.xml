@@ -73,10 +73,22 @@ tools:context=".MainActivity">
         android:layout_width="115dp"
         android:layout_height="54dp"
         android:layout_marginLeft="280dp"
-        android:layout_marginTop="140dp"
-        android:text="2019.09.29"
+        android:layout_marginTop="120dp"
+        android:text="2020.06.19"
         android:fontFamily="@font/nanummyeongjobold"
         android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/goal"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="27dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="30"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:text="나만의 목표 설정 하기" />
 
 </FrameLayout>
 
