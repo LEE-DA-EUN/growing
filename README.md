@@ -86,6 +86,8 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 <img src = "https://user-images.githubusercontent.com/56716976/83534002-40f20100-a52b-11ea-8eaa-d3c9f1ec8cf5.png" width="250">
 </div>
 
+<br>
+<br>
 
 **-3. 감정쓰레기통 구현화면**
 
