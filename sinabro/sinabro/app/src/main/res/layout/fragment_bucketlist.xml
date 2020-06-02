@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,10 +13,58 @@
 
     </ImageView>
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id = "@+id/new_dream"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/nanummyeongjobold"
+        android:text="당신의 소망을 기록합니다."/>
 
-</FrameLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/new_record"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:layout_below="@+id/new_dream"
+        android:background="@android:drawable/editbox_background"/>
+
+    <ListView
+        android:id="@+id/bucketlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/add"
+        android:choiceMode="multipleChoice" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/new_record"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/editbox_background"
+        android:text="소망 추가하기" />
+
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/new_record"
+        android:layout_toLeftOf="@+id/add"
+        android:background="@android:drawable/editbox_background"
+        android:text="소망 삭제하기" />
+
+
+
+</RelativeLayout>
