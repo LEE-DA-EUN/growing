@@ -36,10 +36,20 @@ public class MainActivity extends AppCompatActivity  {
         strResult += Integer.toString(year) + ".";
 
         int month = calendar.get(Calendar.MONTH);
-        strResult += Integer.toString(month+1) + ".";
+        if(1<=month && month<=9){
+            strResult = strResult + "0" + Integer.toString(month+1) + ".";
+        }
+        else{
+            strResult += Integer.toString(month+1) + ".";
+        }
 
         int date = calendar.get(Calendar.DAY_OF_MONTH);
-        strResult += Integer.toString(date);
+        if(1<=date && month<=9){
+            strResult = strResult + "0" + Integer.toString(date) + ".";
+        }
+        else{
+            strResult += Integer.toString(date);
+        }
 
         return strResult;
     }

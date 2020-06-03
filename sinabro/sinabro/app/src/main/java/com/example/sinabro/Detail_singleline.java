@@ -17,8 +17,8 @@ public class Detail_singleline extends AppCompatActivity {
         Intent intent = getIntent();
         TextView today = (TextView) findViewById(R.id.detailed);
         TextView mtext = (TextView) findViewById(R.id.detail_main_text);
-        today.setText(intent.getStringExtra("record").substring(13));
-        String dayed = intent.getStringExtra("record").substring(0,9);
+        today.setText(intent.getStringExtra("record").substring(15));
+        String dayed = intent.getStringExtra("record").substring(0,10);
         mtext.setText("당신의 " + dayed+ "일의 기록입니다.");
     }
 }
