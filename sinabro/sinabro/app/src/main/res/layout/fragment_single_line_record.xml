@@ -42,7 +42,7 @@
         android:layout_below="@+id/encourage"
         android:ems="100"
         android:inputType="text"
-        android:background="@android:drawable/editbox_background" />
+        android:background="@android:drawable/editbox_background"/>
 
     <Button
         android:id="@+id/store"
@@ -51,6 +51,7 @@
         android:background="@android:drawable/editbox_background"
         android:layout_below="@+id/sigle_line_record"
         android:layout_alignParentRight="true"
+        android:fontFamily="@font/nanummyeongjo"
         android:text="저장"/>
 
     <ListView

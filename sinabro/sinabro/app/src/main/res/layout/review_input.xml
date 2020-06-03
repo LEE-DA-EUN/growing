@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/review_Dsubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="감상 제목 ">
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+
+    <EditText
+        android:id="@+id/review_Dday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="감상물의 날짜 (개봉일, 발매일 등)">
+    </EditText>
+
+    <EditText
+        android:id="@+id/review_Dreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="감상 내용">
+
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/review_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/review_store"
+            android:text="저장"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+        </Button>
+
+        <Button
+            android:id="@+id/review_cancel"
+            android:text="취소"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

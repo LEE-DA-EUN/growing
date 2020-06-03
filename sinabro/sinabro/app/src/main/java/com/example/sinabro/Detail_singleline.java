@@ -6,15 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import java.util.Calendar;
-
 public class Detail_singleline extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_single__line__detail);
+        setContentView(R.layout.activity_single_line_detail);
 
         Intent intent = getIntent();
         TextView today = (TextView) findViewById(R.id.detailed);

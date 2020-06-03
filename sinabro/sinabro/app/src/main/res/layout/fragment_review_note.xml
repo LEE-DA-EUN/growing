@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".ReviewNote"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_image">
+
+    </ImageView>
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/review_mtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/nanummyeongjobold"
+        android:text="당신만의 감상공간이에요, 차근히 채워나가세요!"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"/>
+
+    <TextView
+    android:id="@+id/review_stext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/review_mtext"
+    android:fontFamily="@font/nanummyeongjo"
+    android:text="그 때의 나는 어떤 작품을 좋아했고,"
+    android:gravity="center_horizontal"
+    android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/review_stex2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review_stext"
+        android:fontFamily="@font/nanummyeongjo"
+        android:text="어떤 생각을 가지고 있었는지 추억할 수 있을거에요."
+        android:gravity="center_horizontal"
+        android:textSize="12sp"/>
+
+    <ListView
+        android:layout_marginTop="55dp"
+        android:id="@+id/review_list"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_below="@+id/review_stex2">
+    </ListView>
+
+    <Button
+        android:id="@+id/review_add_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginTop="550dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/nanummyeongjo"
+        android:text="나의감상 추가하기"/>
+
+</RelativeLayout>

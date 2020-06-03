@@ -9,15 +9,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -68,7 +64,7 @@ public class SingleLineRecord extends Fragment {
                 slistViewAdapter.notifyDataSetChanged();
             }
 
-        });
+        }); //btn눌러서 한줄 기록 저장
 
         single_line_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -77,7 +73,7 @@ public class SingleLineRecord extends Fragment {
                 intent.putExtra("record", detail_record);
                 startActivity(intent);
             }
-        });
+        }); //detail activity로 이동
 
         slistViewAdapter = new ArrayAdapter<String>(
                 getActivity(),

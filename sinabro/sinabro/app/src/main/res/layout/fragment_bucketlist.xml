@@ -24,6 +24,8 @@
         android:text="당신의 소망을 기록합니다."/>
 
 
+    <!-- TODO: Update blank fragment layout -->
+
     <EditText
         android:id="@+id/new_record"
         android:layout_width="match_parent"
@@ -46,6 +48,7 @@
         android:id="@+id/add"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_below="@+id/new_record"
         android:layout_alignParentRight="true"
         android:background="@android:drawable/editbox_background"
@@ -56,6 +59,7 @@
         android:id="@+id/delete"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_below="@+id/new_record"
         android:layout_toLeftOf="@+id/add"
         android:background="@android:drawable/editbox_background"

@@ -22,7 +22,6 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity  {
 
     ImageButton single_line_btn, bucketlist_btn, emotion_trash_btn, rivew_btn;
-
     private ListView single_line_ListView;
     single_line_DBHelper s_db;
     ArrayAdapter sAdapter;
@@ -159,6 +158,5 @@ public class MainActivity extends AppCompatActivity  {
         final String strCount = (String.format(strFormat, result));
         return strCount;
     }
-    }
-
+}
 

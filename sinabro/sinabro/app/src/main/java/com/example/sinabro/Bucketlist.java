@@ -75,6 +75,3 @@ public class Bucketlist extends Fragment {
         return bucket_view;
     }
 }
-
-
-
