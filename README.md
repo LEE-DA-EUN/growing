@@ -56,8 +56,12 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 **<앱 시작화면(splash) - 3초간 유지 후 MainActivity로 이동>**
 
+<div>
 <img src="https://user-images.githubusercontent.com/55095806/83333862-b1a3de00-a2dd-11ea-8442-791bb1be10f9.png" width="250">
-
+<img src="https://files.slack.com/files-pri/T010MJD2QJZ-F014XA8EW2Y/image.png" width="250">
+<img src="https://files.slack.com/files-pri/T010MJD2QJZ-F014JCU5A9L/image.png" width="250">
+<div>
+  
 <br>
 
 **<앱 첫 화면>**
