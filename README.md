@@ -58,8 +58,6 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 <div>
 <img src="https://user-images.githubusercontent.com/55095806/83333862-b1a3de00-a2dd-11ea-8442-791bb1be10f9.png" width="250">
-<img src="https://files.slack.com/files-pri/T010MJD2QJZ-F014XA8EW2Y/image.png" width="250">
-<img src="https://files.slack.com/files-pri/T010MJD2QJZ-F014JCU5A9L/image.png" width="250">
 <div>
   
 <br>
@@ -72,8 +70,8 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/55095806/83607694-a63f0400-a5b6-11ea-9fa4-f67fc87f2667.png width="250">
-<img src="https://user-images.githubusercontent.com/55095806/83607708-a9d28b00-a5b6-11ea-8e6c-1fd1d247d8e9.png width="250">
+<img src="https://user-images.githubusercontent.com/55095806/83607694-a63f0400-a5b6-11ea-9fa4-f67fc87f2667.png" width="250">
+<img src="https://user-images.githubusercontent.com/55095806/83607708-a9d28b00-a5b6-11ea-8e6c-1fd1d247d8e9.png" width="250">
 
 
 <br>
