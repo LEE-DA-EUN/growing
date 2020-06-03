@@ -45,13 +45,14 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 - 2020.06.03. D-day 기능 구현 (오픈소스 활용)
 
-- 2020.06.03 ~ 감상책 기능 구현
+- 2020.06.03 ~ 감상책 기능 구현, data base 
 
 -
 
 -
 
 
+<br>
 <br>
 
 **<앱 시작화면(splash) - 3초간 유지 후 MainActivity로 이동>**
@@ -74,6 +75,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 <img src="https://user-images.githubusercontent.com/55095806/83607708-a9d28b00-a5b6-11ea-8e6c-1fd1d247d8e9.png" width="250">
 
 <br>
+<br>
 
 **-2. 디데이기능 구현화면**
 
@@ -93,15 +95,13 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 
 **<세부 기능 - 한줄기록, 소망목록, 감정쓰레기통, 감상책>**
+
 <br>
 <br>
 
 **-1. 한줄기록 구현화면**
 
 <br>
-
-<br>
-
 
 <div>
 <img src="https://user-images.githubusercontent.com/55095806/83347897-253bfe80-a363-11ea-9ed9-f9b5400cb7c2.png" width="250">
@@ -140,6 +140,8 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 <br>
 
 <div>
+
+<img src ="https://user-images.githubusercontent.com/55095806/83607984-1483c680-a5b7-11ea-9d54-7dbb8b325f88.png" width = "250">
 
 </div>
 
