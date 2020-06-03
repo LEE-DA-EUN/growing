@@ -43,9 +43,9 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 - 2020.05.31. ~ 2020.06.03. 각자 맡은 부분 수정, data base 학습
 
--
+- 2020.06.03. D-day 기능 구현 (오픈소스 활용)
 
--
+- 2020.06.03 ~ 감상책 기능 구현
 
 -
 
@@ -54,11 +54,31 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 <br>
 
-**<앱 시작화면(splash) - 3초간 유지 후 mainactivity로 이동>**
+**<앱 시작화면(splash) - 3초간 유지 후 MainActivity로 이동>**
 
 <img src="https://user-images.githubusercontent.com/55095806/83333862-b1a3de00-a2dd-11ea-8442-791bb1be10f9.png" width="250">
 
 <br>
+
+**<앱 첫 화면>**
+
+<br>
+**-1. 나만의 목표 설정 구현화면**
+<br>
+
+<br>
+**-2. 디데이기능 구현화면**
+<div>
+<img src="https://user-images.githubusercontent.com/56716976/83604360-02068e80-a5b1-11ea-8a2d-393256917891.png" width="250">
+<img src="https://user-images.githubusercontent.com/56716976/83604375-059a1580-a5b1-11ea-9526-7905069502a1.png" width="250">
+<img src="https://user-images.githubusercontent.com/56716976/83604387-092d9c80-a5b1-11ea-9196-ef35114dbe3d.png" width="250">
+</div>
+### <D-day 기능 사용방법>
+첫 화면에서 Day(Text)를 클릭하면 날짜를 선택할 수 있는 창이 뜬다. 
+달력에서 내가 원하는 날짜를 설정하면 그에따른 D-Day를 알려준다.
+
+<br>
+
 
 **<세부 기능 - 한줄기록, 소망목록, 감정쓰레기통, 감상책>**
 <br>
@@ -67,6 +87,9 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 **-1. 한줄기록 구현화면**
 
 <br>
+
+<br>
+
 
 <div>
 <img src="https://user-images.githubusercontent.com/55095806/83347897-253bfe80-a363-11ea-9ed9-f9b5400cb7c2.png" width="250">
