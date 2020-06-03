@@ -45,7 +45,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 - 2020.06.03. D-day 기능 구현 (오픈소스 활용)
 
-- 2020.06.03 ~ 감상책 기능 구현, data base 
+- 2020.06.03 ~ 감상책 기능 구현, data base 학습
 
 -
 
@@ -61,6 +61,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 <img src="https://user-images.githubusercontent.com/55095806/83333862-b1a3de00-a2dd-11ea-8442-791bb1be10f9.png" width="250">
 <div>
   
+<br>
 <br>
 
 **<앱 첫 화면>**
@@ -145,6 +146,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 
 </div>
 
+<br>
 <br>
 
 **- Hanyang University ERICA Computer Science -**
