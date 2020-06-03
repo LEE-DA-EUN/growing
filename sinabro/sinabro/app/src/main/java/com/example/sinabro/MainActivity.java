@@ -3,21 +3,25 @@ package com.example.sinabro;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.sinabro.provider.single_line_DBHelper;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity  {
 
     ImageButton single_line_btn, bucketlist_btn, emotion_trash_btn, rivew_btn;
-
 
     private ListView single_line_ListView;
     single_line_DBHelper s_db;
@@ -40,6 +44,17 @@ public class MainActivity extends AppCompatActivity  {
 
         return strResult;
     }
+
+    private final int ONE_DAY = 24 * 60 * 60 * 1000;
+    private Calendar mCalendar;
+    private TextView mTvResult;
+
+    private DatePickerDialog.OnDateSetListener mDateSetListener = new DatePickerDialog.OnDateSetListener() {
+        @Override
+        public void onDateSet(DatePicker a_view, int a_year, int a_monthOfYear, int a_dayOfMonth) {
+            mTvResult.setText(getDday(a_year, a_monthOfYear, a_dayOfMonth));
+        }
+    };
 
 
     @Override
@@ -103,9 +118,47 @@ public class MainActivity extends AppCompatActivity  {
 
         TextView today = (TextView)findViewById(R.id.today_date);
         today.setText(resultdate);
+
+
+        Locale.setDefault(Locale.KOREAN);
+        mCalendar = new GregorianCalendar();
+        mTvResult = findViewById(R.id.goalday);
+
+        View.OnClickListener clickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View a_view) {
+                final int year = mCalendar.get(Calendar.YEAR);
+                final int month = mCalendar.get(Calendar.MONTH);
+                final int day = mCalendar.get(Calendar.DAY_OF_MONTH);
+
+                DatePickerDialog dialog = new DatePickerDialog(MainActivity.this, mDateSetListener, year, month, day);
+                dialog.show();
+            }
+        };
+        findViewById(R.id.day).setOnClickListener(clickListener);
     }
 
 
+    private String getDday(int a_year, int a_monthOfYear, int a_dayOfMonth) {
+        final Calendar ddayCalendar = Calendar.getInstance();
+        ddayCalendar.set(a_year, a_monthOfYear, a_dayOfMonth);
+        final long dday = ddayCalendar.getTimeInMillis() / ONE_DAY;
+        final long today = Calendar.getInstance().getTimeInMillis() / ONE_DAY;
+        long result = dday - today;
+        final String strFormat;
+
+        if (result > 0) {
+            strFormat = "- %d";
+        } else if (result == 0) {
+            strFormat = "+ 0";
+        } else {
+            result *= -1;
+            strFormat = "+ %d";
+        }
+
+        final String strCount = (String.format(strFormat, result));
+        return strCount;
+    }
+    }
 
 
-}
