@@ -63,17 +63,23 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 **<앱 첫 화면>**
 
 <br>
+
 **-1. 나만의 목표 설정 구현화면**
+
 <br>
 
 <br>
+
 **-2. 디데이기능 구현화면**
+
 <div>
 <img src="https://user-images.githubusercontent.com/56716976/83604360-02068e80-a5b1-11ea-8a2d-393256917891.png" width="250">
 <img src="https://user-images.githubusercontent.com/56716976/83604375-059a1580-a5b1-11ea-9526-7905069502a1.png" width="250">
 <img src="https://user-images.githubusercontent.com/56716976/83604387-092d9c80-a5b1-11ea-9196-ef35114dbe3d.png" width="250">
 </div>
+
 ### <D-day 기능 사용방법>
+
 첫 화면에서 Day(Text)를 클릭하면 날짜를 선택할 수 있는 창이 뜬다. 
 달력에서 내가 원하는 날짜를 설정하면 그에따른 D-Day를 알려준다.
 
