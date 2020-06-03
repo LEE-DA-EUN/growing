@@ -88,7 +88,7 @@
             android:ems="30"
             android:gravity="center_horizontal"
             android:inputType="text"
-            android:text="나만의 목표 설정 하기" />
+            android:hint="나만의 목표 설정 하기" />
 
 
         <TextView
