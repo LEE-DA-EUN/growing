@@ -90,6 +90,34 @@ tools:context=".MainActivity">
         android:inputType="text"
         android:text="나만의 목표 설정 하기" />
 
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="155dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nanummyeongjobold"
+        android:text="Day"/>
+
+
+
+    <TextView
+        android:id="@+id/goalday"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="155dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nanummyeongjobold"
+        tools:text="D-day" />
+
 </FrameLayout>
+
+
+
 
 </RelativeLayout>
