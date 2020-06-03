@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity  {
         }
 
         int date = calendar.get(Calendar.DAY_OF_MONTH);
-        if(1<=date && month<=9){
+        if(1<=date && date<=9){
             strResult = strResult + "0" + Integer.toString(date) + ".";
         }
         else{
-            strResult += Integer.toString(date);
+            strResult = strResult + Integer.toString(date) + ".";
         }
 
         return strResult;

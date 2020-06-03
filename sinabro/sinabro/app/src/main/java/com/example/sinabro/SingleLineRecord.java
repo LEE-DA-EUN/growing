@@ -43,7 +43,7 @@ public class SingleLineRecord extends Fragment {
         }
 
         int date = calendar.get(Calendar.DAY_OF_MONTH);
-        if(1<=date && month<=9){
+        if(1<=date && date<=9){
             strResult = strResult + "0" + Integer.toString(date)+ ".";
         }
         else{
