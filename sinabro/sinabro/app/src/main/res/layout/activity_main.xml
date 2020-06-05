@@ -95,12 +95,12 @@
             android:id="@+id/day"
             android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="300dp"
+            android:layout_marginLeft="285dp"
             android:layout_marginTop="155dp"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:fontFamily="@font/nanummyeongjobold"
-            android:text="Day"/>
+            android:text="다직해야 "/>
 
 
 
@@ -108,12 +108,12 @@
             android:id="@+id/goalday"
             android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="335dp"
+            android:layout_marginLeft="355dp"
             android:layout_marginTop="155dp"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:fontFamily="@font/nanummyeongjobold"
-            tools:text="D-day" />
+            tools:text=" -1000" />
 
     </FrameLayout>
 
