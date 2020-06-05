@@ -23,7 +23,7 @@
 
 Application의 이름은“시나브로”로 정했으며, 이는 "시나브로"의 의미(모르는 사이에 조금씩)처럼 앱을 사용하면서 차곡차곡 긍정적인 변화를 만들어내기를 바라는 마음을 담았습니다. 
 
-또한, “시나브로”가 순우리말인 만큼, Application의 전체 디자인을 순우리말로 할 계획이며, 이를 통해 Application 사용자들은 더 많은 순우리말을 접하고, 동시에 그 단어가 주는 따뜻함을 느낄 수 있게 될 것입니다.
+또한, “시나브로”가 순우리말인 만큼, Application의 전체 디자인을 되도록 순우리말로 할 계획이며, 이를 통해 Application 사용자들은 더 많은 순우리말을 접하고, 동시에 그 단어가 주는 따뜻함을 느낄 수 있게 될 것입니다.
 
 추가 기능과 개발 상황들은 계속해서 README.md와 문서정리 등을 통해 업데이트하도록 하겠습니다.
 
@@ -83,14 +83,16 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 <br>
 
 <div>
-<img src="https://user-images.githubusercontent.com/55095806/83848933-90ae1380-a749-11ea-9a63-a47387becd33.png" width="250">
+<img src="https://user-images.githubusercontent.com/55095806/83849565-922c0b80-a74a-11ea-86cf-df42a785773e.png" width="250">
+<img src="https://user-images.githubusercontent.com/55095806/83849568-935d3880-a74a-11ea-90df-b8e5ba9058c8.png" width="250">
 <img src="https://user-images.githubusercontent.com/56716976/83604375-059a1580-a5b1-11ea-9526-7905069502a1.png" width="250">
-<img src="https://user-images.githubusercontent.com/56716976/83604387-092d9c80-a5b1-11ea-9196-ef35114dbe3d.png" width="250">
+
 </div>
 
 ##### <D-day 기능 사용방법>
 
 ###### 첫 화면에서 Day(Text)를 클릭하면 날짜를 선택할 수 있는 창이 뜬다. 달력에서 내가 원하는 날짜를 설정하면 그에따른 D-Day를 알려준다.
+###### 다직해야  : '기껏해야' 라는 뜻의 순우리말 입니다. 사용자가 목표한 시간까지 오랜 시간이 남지 않았음을 응원, 격려하자는  이 문구를 선택했습니다. 
 
 <br>
 <br>
