@@ -83,9 +83,10 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 <br>
 
 <div>
-<img src="https://user-images.githubusercontent.com/55095806/83849565-922c0b80-a74a-11ea-86cf-df42a785773e.png" width="250">
+
 <img src="https://user-images.githubusercontent.com/55095806/83849568-935d3880-a74a-11ea-90df-b8e5ba9058c8.png" width="250">
-<img src="https://user-images.githubusercontent.com/56716976/83604375-059a1580-a5b1-11ea-9526-7905069502a1.png" width="250">
+<img src="https://user-images.githubusercontent.com/55095806/83849565-922c0b80-a74a-11ea-86cf-df42a785773e.png" width="250">
+<img src="https://user-images.githubusercontent.com/55095806/83848933-90ae1380-a749-11ea-9a63-a47387becd33.png" width="250">
 
 </div>
 
