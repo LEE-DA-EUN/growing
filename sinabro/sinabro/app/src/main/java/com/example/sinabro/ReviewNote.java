@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -42,6 +43,28 @@ public class ReviewNote extends Fragment {
                 Dialog review_input = new Dialog(getActivity());
                 review_input.setContentView(R.layout.review_input);
                 review_input.setTitle("감상 기록 공간");
+
+                Button store = (Button) review_input.findViewById(R.id.review_store);
+                Button cancel = (Button) review_input.findViewById(R.id.review_cancel);
+
+                final EditText review_subject = (EditText) review_input.findViewById(R.id.review_Dsubject);
+                final EditText review_day = (EditText) review_input.findViewById(R.id.review_Dday);
+                final EditText review_content = (EditText) review_input.findViewById(R.id.review_Dreview);
+
+                store.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                });
+
+                cancel.setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                });
+
             }
         });
 

@@ -14,9 +14,6 @@ public class single_line_DBHelper extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "single_line.db";
     public static final String  SINGLE_LINE_COLUMN_ID = "id";
-    public static final String SINGLE_LINE_COLUMN_NAME = "single_line";
-    public static final String  SINGLE_LINE_COLUMN_YEAR = "year";
-    public static final String  SINGLE_LINE_COLUMN_MONTH = "month";
     public static final String  SINGLE_LINE_COLUMN_DATE = "date";
     public static final String  SINGLE_LINE_COLUMN_CONTENT = "content";
 
@@ -27,7 +24,7 @@ public class single_line_DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table single_line" + "(id integer primary key, single_line text, year text, month text, date text, content text)");
+        db.execSQL("create table single_line" + "(id integer primary key, date text, content text)");
     }
 
     @Override
@@ -36,13 +33,11 @@ public class single_line_DBHelper extends SQLiteOpenHelper {
         onCreate(db); // 다시 생성
     }
 
-    public boolean insetSingleLine(String year, String month, String date, String content){
+    public boolean insetSingleLine(String date, String content){
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put("year", year);
-        contentValues.put("month", month);
         contentValues.put("date", date);
         contentValues.put("content", content);
 
@@ -58,17 +53,15 @@ public class single_line_DBHelper extends SQLiteOpenHelper {
 
     public int numberOfRows(){
         SQLiteDatabase db = this.getReadableDatabase();
-        int numRows = (int) DatabaseUtils.queryNumEntries(db, SINGLE_LINE_COLUMN_NAME);
+        int numRows = (int) DatabaseUtils.queryNumEntries(db, SINGLE_LINE_COLUMN_DATE);
         return numRows;
     }
 
-    public boolean updateSingleLine(Integer id, String year, String month, String date, String content){
+    public boolean updateSingleLine(Integer id, String date, String content){
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put("year", year);
-        contentValues.put("month", month);
         contentValues.put("date", date);
         contentValues.put("content", content);
         db.update("single_line",contentValues,"id=?", new String[]{Integer.toString(id)});
