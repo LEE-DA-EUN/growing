@@ -2,17 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="100dp"
     android:background="#fff"
     android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="감상 기록 공간">
+    </TextView>
+
 
     <EditText
         android:id="@+id/review_Dsubject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="감상 제목 ">
-        <requestFocus>
-        </requestFocus>
     </EditText>
 
     <EditText
