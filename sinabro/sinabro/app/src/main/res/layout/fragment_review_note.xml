@@ -7,23 +7,16 @@
     tools:context=".ReviewNote"
     android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/background_image">
-
-    </ImageView>
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/review_mtext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/nanummyeongjobold"
         android:text="당신만의 감상공간이에요, 차근히 채워나가세요!"
         android:gravity="center_horizontal"
-        android:textSize="18sp"/>
+        android:textSize="16.8sp"/>
 
     <TextView
     android:id="@+id/review_stext"
@@ -46,7 +39,7 @@
         android:textSize="12sp"/>
 
     <ListView
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="30dp"
         android:id="@+id/review_list"
         android:layout_width="match_parent"
         android:layout_height="480dp"
@@ -58,7 +51,7 @@
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="655dp"
         android:layout_alignParentRight="true"
         android:fontFamily="@font/nanummyeongjo"
         android:text="나의감상 추가하기"/>
