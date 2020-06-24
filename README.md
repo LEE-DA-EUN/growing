@@ -169,4 +169,7 @@ Application의 이름은“시나브로”로 정했으며, 이는 "시나브로
 <br>
 
 **최종 보고서 파일에 세부적으로 다 작성하였으니, 최종 보고서 파일을 다운 받아 봐주시면 감사하겠습니다 :-D**
+
+<br>
+
 **- Hanyang University ERICA Computer Science -**
