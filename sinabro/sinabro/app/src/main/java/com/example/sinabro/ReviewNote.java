@@ -40,10 +40,9 @@ public class ReviewNote extends Fragment {
         Button r_btn = (Button) view.findViewById(R.id.review_add_btn);
         r_btn.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                Dialog review_input = new Dialog(getActivity());
+                final Dialog review_input = new Dialog(getActivity());
                 review_input.setContentView(R.layout.review_input);
-                review_input.setTitle("감상 기록 공간");
-
+                
                 Button store = (Button) review_input.findViewById(R.id.review_store);
                 Button cancel = (Button) review_input.findViewById(R.id.review_cancel);
 
@@ -54,6 +53,13 @@ public class ReviewNote extends Fragment {
                 store.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        String review = "제목 : " + review_subject.getText().toString() +
+                                "\n날짜 : "  + review_day.getText().toString() +
+                                "\n내용 : " + review_content.getText().toString();
+
+                        review_record.add(review);
+                        rlistViewAdapter.notifyDataSetChanged();
+                        review_input.dismiss();
 
                     }
                 });
@@ -61,16 +67,19 @@ public class ReviewNote extends Fragment {
                 cancel.setOnClickListener(new View.OnClickListener(){
                     @Override
                     public void onClick(View v) {
+                        review_input.dismiss();
 
                     }
                 });
+
+                review_input.show();
 
             }
         });
 
         rlistViewAdapter = new ArrayAdapter<String>(
                 getActivity(),
-                android.R.layout.simple_expandable_list_item_1,
+                android.R.layout.simple_list_item_1,
                 review_record
         );
         review_list.setAdapter(rlistViewAdapter);
@@ -79,5 +88,3 @@ public class ReviewNote extends Fragment {
         return view;
     }
 }
-
-
