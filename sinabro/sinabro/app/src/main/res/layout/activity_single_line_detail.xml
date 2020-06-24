@@ -32,8 +32,6 @@
         android:text="오늘 하루도 행복한 하루 였다 :-D"
         android:fontFamily="@font/nanummyeongjo"
         android:textSize="18sp">
-
     </TextView>
-
 
 </RelativeLayout>

@@ -1,12 +1,6 @@
 package com.example.sinabro;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,13 +10,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.example.sinabro.provider.SingleLineContract;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.example.sinabro.provider.single_line_DBHelper;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-
-import static com.example.sinabro.provider.single_line_DBHelper.DATABASE_NAME;
 
 public class SingleLineRecord extends Fragment {
 
@@ -62,22 +57,24 @@ public class SingleLineRecord extends Fragment {
         return strResult;
     }
 
-    private void printTable() {
-        Cursor cursor = s_dbHelper.readRecord();
-        String result = "";
-
-        result += "row 개수 : " + cursor.getCount() + "\n";
-        while (cursor.moveToNext()) {
-            int itemId = cursor.getInt(cursor.getColumnIndexOrThrow(SingleLineContract.SLEntry._ID));
-            String date = cursor.getString(cursor.getColumnIndexOrThrow(SingleLineContract.SLEntry.SINGLE_LINE_COLUMN_DATE));
-            int content = cursor.getInt(cursor.getColumnIndexOrThrow(SingleLineContract.SLEntry.SINGLE_LINE_COLUMN_CONTENT));
-
-            result += itemId + " " + date + " : " + content + "\n";
-        }
-
-        cursor.close();
-    }
-
+//    protected void onResum(){
+//        super.onResume();
+//    }
+//    private void showTable(ArrayList<String> arrayList, ArrayAdapter<String> arrayAdapter) {
+//        Cursor cursor = s_dbHelper.readRecord();
+//        String result = "";
+//
+//        while (cursor.moveToNext()) {
+//            int itemId = cursor.getInt(cursor.getColumnIndexOrThrow(SingleLineContract.SLEntry._ID));
+//            String date = cursor.getString(cursor.getColumnIndexOrThrow(SingleLineContract.SLEntry.SINGLE_LINE_COLUMN_DATE));
+//            String content = cursor.getString(cursor.getColumnIndexOrThrow(SingleLineContract.SLEntry.SINGLE_LINE_COLUMN_CONTENT));
+//
+//            result += itemId + " " + date + " : " + content + "\n";
+//            arrayList.add(result);
+//            arrayAdapter.notifyDataSetChanged();
+//        }
+//        cursor.close();
+//    }
 
     @Nullable
     @Override
@@ -85,7 +82,7 @@ public class SingleLineRecord extends Fragment {
 
         final View single_line_view = inflater.inflate(R.layout.fragment_single_line_record, container, false);
 
-        s_dbHelper = new single_line_DBHelper(getActivity()); // this?
+        //s_dbHelper = new single_line_DBHelper(getActivity()); // this?
 
         final ListView single_line_list = (ListView) single_line_view.findViewById(R.id.stored_list);
         Button storage_btn = (Button) single_line_view.findViewById(R.id.store);
@@ -93,11 +90,13 @@ public class SingleLineRecord extends Fragment {
 
         final ArrayList<String> user_record = new ArrayList<String>();
 
+        //showTable(user_record, slistViewAdapter);   //  저장된 데이터 list view로 가져오기
+
         storage_btn.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 String user_input_data = getDate() + "  :  " + single_line_record.getText().toString();
                 user_record.add(user_input_data);
-                s_dbHelper.insetRecord(getDate(), single_line_record.getText().toString()); // 사용자 기록 넣기 (날짜 + 내용)
+         //       s_dbHelper.insertRecord(getDate(), single_line_record.getText().toString()); // 사용자 기록 넣기 (날짜 + 내용)
                 slistViewAdapter.notifyDataSetChanged();
             }
 

@@ -1,20 +1,17 @@
 package com.example.sinabro;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.ImageButton;
-import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.sinabro.provider.single_line_DBHelper;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
@@ -22,9 +19,6 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity  {
 
     ImageButton single_line_btn, bucketlist_btn, emotion_trash_btn, rivew_btn;
-    private ListView single_line_ListView;
-    single_line_DBHelper s_db;
-    ArrayAdapter sAdapter;
 
     public String getDate(){ // 날짜 구하기
 
@@ -57,6 +51,7 @@ public class MainActivity extends AppCompatActivity  {
     private final int ONE_DAY = 24 * 60 * 60 * 1000;
     private Calendar mCalendar;
     private TextView mTvResult;
+    single_line_DBHelper s_dbHelper; // single_line db
 
     private DatePickerDialog.OnDateSetListener mDateSetListener = new DatePickerDialog.OnDateSetListener() {
         @Override
@@ -77,7 +72,6 @@ public class MainActivity extends AppCompatActivity  {
         emotion_trash_btn = (ImageButton)findViewById(R.id.emotion_trsh_bth);
         rivew_btn = (ImageButton)findViewById(R.id.rivew_btn);
 
-
         single_line_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,7 +80,6 @@ public class MainActivity extends AppCompatActivity  {
                 transaction.replace(R.id.frame, singleLineRecord);
                 transaction.addToBackStack(null);
                 transaction.commit();
-
             }
         });
 
