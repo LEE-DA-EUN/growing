@@ -74,7 +74,7 @@ public class SingleLineRecord extends Fragment {
 
             result += itemId + " " + date + " : " + content + "\n";
         }
-        
+
         cursor.close();
     }
 
@@ -87,7 +87,7 @@ public class SingleLineRecord extends Fragment {
 
         s_dbHelper = new single_line_DBHelper(getActivity()); // this?
 
-        ListView single_line_list = (ListView) single_line_view.findViewById(R.id.stored_list);
+        final ListView single_line_list = (ListView) single_line_view.findViewById(R.id.stored_list);
         Button storage_btn = (Button) single_line_view.findViewById(R.id.store);
         final EditText single_line_record = (EditText) single_line_view.findViewById(R.id.sigle_line_record);
 
@@ -99,7 +99,6 @@ public class SingleLineRecord extends Fragment {
                 user_record.add(user_input_data);
                 s_dbHelper.insetRecord(getDate(), single_line_record.getText().toString()); // 사용자 기록 넣기 (날짜 + 내용)
                 slistViewAdapter.notifyDataSetChanged();
-                printTable();
             }
 
         }); //btn눌러서 한줄 기록 저장
@@ -124,4 +123,3 @@ public class SingleLineRecord extends Fragment {
     }
 
 }
-
