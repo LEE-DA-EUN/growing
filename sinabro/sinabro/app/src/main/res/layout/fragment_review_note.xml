@@ -19,14 +19,14 @@
         android:textSize="16.8sp"/>
 
     <TextView
-    android:id="@+id/review_stext"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/review_mtext"
-    android:fontFamily="@font/nanummyeongjo"
-    android:text="그 때의 나는 어떤 작품을 좋아했고,"
-    android:gravity="center_horizontal"
-    android:textSize="12sp"/>
+        android:id="@+id/review_stext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review_mtext"
+        android:fontFamily="@font/nanummyeongjo"
+        android:text="그 때의 나는 어떤 작품을 좋아했고,"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"/>
 
     <TextView
         android:id="@+id/review_stex2"
@@ -51,7 +51,8 @@
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
-        android:layout_marginTop="655dp"
+        android:layout_marginTop="550dp"
+        android:gravity="bottom"
         android:layout_alignParentRight="true"
         android:fontFamily="@font/nanummyeongjo"
         android:text="나의감상 추가하기"/>

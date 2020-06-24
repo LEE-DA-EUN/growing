@@ -42,7 +42,7 @@ public class ReviewNote extends Fragment {
             public void onClick(View v) {
                 final Dialog review_input = new Dialog(getActivity());
                 review_input.setContentView(R.layout.review_input);
-                
+
                 Button store = (Button) review_input.findViewById(R.id.review_store);
                 Button cancel = (Button) review_input.findViewById(R.id.review_cancel);
 

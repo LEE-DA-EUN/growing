@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity  {
             strFormat = "+ %d";
         }
 
-        final String strCount = (String.format(strFormat, result));
+        final String strCount = (String.format(strFormat, result)) + " 일";
         return strCount;
     }
 }

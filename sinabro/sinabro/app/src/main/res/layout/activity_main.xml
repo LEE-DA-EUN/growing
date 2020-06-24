@@ -72,7 +72,7 @@
             android:id="@+id/today_date"
             android:layout_width="115dp"
             android:layout_height="54dp"
-            android:layout_marginLeft="280dp"
+            android:layout_marginLeft="250dp"
             android:layout_marginTop="120dp"
             android:text="2020.06.19"
             android:fontFamily="@font/nanummyeongjobold"
@@ -95,7 +95,7 @@
             android:id="@+id/day"
             android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="285dp"
+            android:layout_marginLeft="235dp"
             android:layout_marginTop="155dp"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -108,12 +108,12 @@
             android:id="@+id/goalday"
             android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="355dp"
+            android:layout_marginLeft="310dp"
             android:layout_marginTop="155dp"
             android:textSize="18sp"
             android:textStyle="bold"
             android:fontFamily="@font/nanummyeongjobold"
-            tools:text=" -1000" />
+            tools:text=" - 1000" />
 
     </FrameLayout>
 
