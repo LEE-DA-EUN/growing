@@ -54,7 +54,3 @@ public class EmotionalTrashCan extends Fragment {
         return trash_view;
     }
 }
-
-
-
-

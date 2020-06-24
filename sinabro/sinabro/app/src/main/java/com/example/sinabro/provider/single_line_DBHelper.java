@@ -12,7 +12,8 @@ import java.util.ArrayList;
 public class single_line_DBHelper extends SQLiteOpenHelper {
 
 
-    public static final String DATABASE_NAME = "single_line.db";
+    public static final String DATABASE_NAME = "single_line.db";  //DB 이름
+    public static final String TABLE_NAME = "single_line_table";  // TABLE 이름
     public static final String  SINGLE_LINE_COLUMN_ID = "id";
     public static final String  SINGLE_LINE_COLUMN_DATE = "date";
     public static final String  SINGLE_LINE_COLUMN_CONTENT = "content";
@@ -73,16 +74,16 @@ public class single_line_DBHelper extends SQLiteOpenHelper {
         return db.delete("single_line","id=?", new String[]{Integer.toString(id)});
     }
 
-    public ArrayList getAllSinlgeLine(){
-        ArrayList arrayList = new ArrayList();
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res = db.rawQuery("select * from single_line", null);
-        res.moveToFirst();
-        while (res.isAfterLast() == false){
-            arrayList.add(res.getString(res.getColumnIndex(SINGLE_LINE_COLUMN_ID)));
-            res.getString(res.getColumnIndex(SINGLE_LINE_COLUMN_NAME));
-            res.moveToNext();
-        }
-        return arrayList;
-    }
+//    public ArrayList getAllSinlgeLine(){
+//        ArrayList arrayList = new ArrayList();
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        Cursor res = db.rawQuery("select * from single_line", null);
+//        res.moveToFirst();
+//        while (res.isAfterLast() == false){
+//            arrayList.add(res.getString(res.getColumnIndex(SINGLE_LINE_COLUMN_ID)));
+//            res.getString(res.getColumnIndex(SINGLE_LINE_COLUMN_NAME));
+//            res.moveToNext();
+//        }
+//        return arrayList;
+//    }
 }

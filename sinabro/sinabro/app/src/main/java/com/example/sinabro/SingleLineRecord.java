@@ -14,10 +14,17 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import com.example.sinabro.provider.single_line_DBHelper;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 
 public class SingleLineRecord extends Fragment {
+
+    private single_line_DBHelper s_db; // single_line db
+    
+
 
     public SingleLineRecord() {
         // Required empty public constructor
@@ -57,7 +64,6 @@ public class SingleLineRecord extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-
         final View single_line_view = inflater.inflate(R.layout.fragment_single_line_record, container, false);
 
         ListView single_line_list = (ListView) single_line_view.findViewById(R.id.stored_list);
@@ -93,7 +99,6 @@ public class SingleLineRecord extends Fragment {
 
         return single_line_view;
     }
-
 
 }
 

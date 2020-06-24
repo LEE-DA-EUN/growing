@@ -11,9 +11,10 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nanummyeongjo"
         android:gravity="center"
+        android:layout_marginTop="10dp"
         android:text="오늘 하루, 당신이 버리고 싶은 감정은 무엇인가요?"
         android:textColor="@android:color/background_light"
-        android:textSize="30dp" />
+        android:textSize="24dp" />
 
     <TextView
         android:id="@+id/text"
@@ -25,7 +26,7 @@
         android:gravity="center"
         android:text="당신이 버리고 싶었던 감정을"
         android:textColor="#B49AF7"
-        android:textSize="20dp" />
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/text2"
@@ -37,7 +38,7 @@
         android:gravity="center"
         android:text="쓰레기통에 버리세요."
         android:textColor="#B49AF7"
-        android:textSize="20dp" />
+        android:textSize="18dp" />
 
 
     <ImageButton
