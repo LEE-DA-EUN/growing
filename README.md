@@ -1,7 +1,7 @@
 # :deciduous_tree: 시나브로 :deciduous_tree:
 
 ## (Open Source Software Development - OurFirstApp) 
-
+## 프론트엔드와 DB(SQLite)를 사용하여 사용자의 하루, 감상, 소망, 목표, 디데일를 설정/기록할 수 있도록 앱을 제작하였습니다 :-D (감정 쓰레기통은 감정을 버리는 것이므로 따로 DB를 구축하지 않았습니다!)
 ###  Team name : growing 
 
 <br>
