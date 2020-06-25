@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".Detail_singleline">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_image">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/detail_main_text"
+        android:layout_width="match_parent"
+        android:textSize="22sp"
+        android:fontFamily="@font/nanummyeongjobold"
+        android:text="당신의 2020.08.22일의 기록입니다."
+        android:gravity="center"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/detailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="200dp"
+        android:gravity="center"
+        android:text="오늘 하루도 행복한 하루 였다 :-D"
+        android:fontFamily="@font/nanummyeongjo"
+        android:textSize="18sp">
+    </TextView>
+
+</RelativeLayout>
