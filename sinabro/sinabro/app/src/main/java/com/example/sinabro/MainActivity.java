@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.sinabro.provider.bucket_list_DBHelper;
 import com.example.sinabro.provider.single_line_DBHelper;
 
 import java.util.Calendar;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity  {
 
     SharedPreferences pref;
     single_line_DBHelper single_line_dbHelper;
+    bucket_list_DBHelper bucket_list_dbHelper;
 
     public String getDate(){ // 날짜 구하기
 
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
 
         single_line_dbHelper = new single_line_DBHelper(MainActivity.this);
+        bucket_list_dbHelper = new bucket_list_DBHelper(MainActivity.this);
 
         pref = getSharedPreferences("sinabro_preference", MODE_PRIVATE);
 
