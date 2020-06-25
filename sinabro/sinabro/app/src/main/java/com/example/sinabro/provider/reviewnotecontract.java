@@ -15,3 +15,5 @@ public class reviewnotecontract {
         public static final String  SINGLE_LINE_COLUMN_CONTENT = "content";
     }
 }
+
+ 

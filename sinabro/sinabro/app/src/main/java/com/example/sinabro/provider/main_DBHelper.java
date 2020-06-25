@@ -6,7 +6,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class main_DBHelper extends SQLiteOpenHelper {
 
-
     private static main_DBHelper sInstance;
 
     private static final int DB_VERSION = 1;
@@ -41,4 +40,3 @@ public class main_DBHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_DELECTE_ENTRIES);
         onCreate(db);
     }
-}
