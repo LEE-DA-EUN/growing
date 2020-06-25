@@ -36,7 +36,7 @@
 
 
     <EditText
-        android:id="@+id/sigle_line_record"
+        android:id="@+id/single_line_record"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@+id/encourage"
@@ -49,13 +49,24 @@
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
-        android:layout_below="@+id/sigle_line_record"
+        android:layout_below="@+id/single_line_record"
         android:layout_alignParentRight="true"
         android:fontFamily="@font/nanummyeongjo"
         android:text="저장"/>
 
+    <Button
+        android:id="@+id/del"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/single_line_record"
+        android:fontFamily="@font/nanummyeongjo"
+        android:layout_toLeftOf="@+id/store"
+        android:background="@android:drawable/editbox_background"
+        android:text="삭제" />
+
     <ListView
         android:id="@+id/stored_list"
+        android:choiceMode="multipleChoice"
         android:layout_below="@+id/store"
         android:layout_width="match_parent"
         android:layout_height="520dp" />

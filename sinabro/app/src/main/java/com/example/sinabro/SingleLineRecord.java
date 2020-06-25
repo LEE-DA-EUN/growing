@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -89,7 +90,8 @@ public class SingleLineRecord extends Fragment {
 
         final ListView single_line_list = (ListView) single_line_view.findViewById(R.id.stored_list);
         Button storage_btn = (Button) single_line_view.findViewById(R.id.store);
-        final EditText single_line_record = (EditText) single_line_view.findViewById(R.id.sigle_line_record);
+        Button del_btn = (Button) single_line_view.findViewById((R.id.del));
+        final EditText single_line_record = (EditText) single_line_view.findViewById(R.id.single_line_record);
 
         final ArrayList<String> user_record = new ArrayList<String>();
 
@@ -97,11 +99,26 @@ public class SingleLineRecord extends Fragment {
             public void onClick(View v) {
                 String user_input_data = getDate() + "  :  " + single_line_record.getText().toString();
                 user_record.add(user_input_data);
-                s_dbHelper.insetRecord(getDate(), single_line_record.getText().toString()); // 사용자 기록 넣기 (날짜 + 내용)
+//                s_dbHelper.insetRecord(getDate(), single_line_record.getText().toString()); // 사용자 기록 넣기 (날짜 + 내용)
                 slistViewAdapter.notifyDataSetChanged();
             }
 
         }); //btn눌러서 한줄 기록 저장
+
+        del_btn.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View v) {
+                SparseBooleanArray del = single_line_list.getCheckedItemPositions();
+                if (del.size() != 0){
+                    for(int i = single_line_list.getCount()-1; i>=0; i--){
+                        if(del.get(i)){
+                            user_record.remove(i);
+                        }
+                    }
+                    single_line_list.clearChoices();
+                    slistViewAdapter.notifyDataSetChanged();
+                }
+            }
+        });
 
         single_line_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -114,7 +131,7 @@ public class SingleLineRecord extends Fragment {
 
         slistViewAdapter = new ArrayAdapter<String>(
                 getActivity(),
-                android.R.layout.simple_expandable_list_item_1,
+                android.R.layout.simple_list_item_multiple_choice,
                 user_record
         );
         single_line_list.setAdapter(slistViewAdapter);
