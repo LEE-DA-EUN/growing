@@ -40,3 +40,4 @@ public class main_DBHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_DELECTE_ENTRIES);
         onCreate(db);
     }
+}

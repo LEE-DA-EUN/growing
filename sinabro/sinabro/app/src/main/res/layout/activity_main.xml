@@ -70,54 +70,39 @@
 
         <TextView
             android:id="@+id/today_date"
-            android:layout_width="115dp"
-            android:layout_height="54dp"
-            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
             android:layout_marginTop="120dp"
-            android:text="2020.06.19"
+            android:layout_marginRight="20dp"
             android:fontFamily="@font/nanummyeongjobold"
-            android:textSize="22sp" />
+            android:text="2020.06.19"
+            android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/goal"
+            android:id="@+id/edt_goal"
             android:layout_width="350dp"
             android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="27dp"
             android:background="@android:drawable/editbox_background"
             android:ems="30"
-            android:gravity="center_horizontal"
-            android:inputType="text"
-            android:hint="나만의 목표 설정 하기" />
-
+            android:gravity="center"
+            android:hint="나만의 목표 설정 하기"
+            android:imeOptions="actionDone"
+            android:inputType="text" />
 
         <TextView
             android:id="@+id/day"
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="235dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
             android:layout_marginTop="155dp"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            android:layout_marginRight="20dp"
             android:fontFamily="@font/nanummyeongjobold"
-            android:text="다직해야 "/>
-
-
-
-        <TextView
-            android:id="@+id/goalday"
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="310dp"
-            android:layout_marginTop="155dp"
+            android:text="다직해야 "
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/nanummyeongjobold"
-            tools:text=" - 1000" />
-
+            android:textStyle="bold" />
     </FrameLayout>
-
-
-
 
 </RelativeLayout>

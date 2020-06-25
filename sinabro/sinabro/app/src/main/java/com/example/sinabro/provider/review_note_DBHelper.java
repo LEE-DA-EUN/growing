@@ -43,5 +43,3 @@ public class review_note_DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 }
-
- 
